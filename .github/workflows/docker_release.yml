@@ -28,7 +28,7 @@ jobs:
       uses: dsaltares/fetch-gh-release-asset@1.1.1
       with:
         repo: 'jjanowsk/uniffi-bindgen-cs'
-        version: 'v0.Y.0'
+        version: 'tags/v0.Y.0'
         file: 'uniffi-bindgen-cs'
         target: 'target/release/uniffi-bindgen-cs'
 
