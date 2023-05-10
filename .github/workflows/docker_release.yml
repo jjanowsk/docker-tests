@@ -22,7 +22,7 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        path: target/release/uniffi-bindgen-cs
+        path: target/release/uniffi-bindgen
         retention-days: 1
 
   build-docker-and-push:
@@ -37,6 +37,7 @@ jobs:
     - name: Fetch uniffi generator
       uses: actions/download-artifact@v3
       with:
+        name: uniffi-bindgen
         path: target/release
 
     - name: Fetch C# generator
