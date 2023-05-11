@@ -22,6 +22,7 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
+        name: uniffi-bindgen
         path: target/release/uniffi-bindgen
         retention-days: 1
 
