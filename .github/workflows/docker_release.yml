@@ -10,4 +10,4 @@ jobs:
         run: |
           sudo lsmod
           sudo modinfo xt_NFQUEUE
-          iptables -j NFQUEUE --help
+          sudo iptables -j NFQUEUE --help
