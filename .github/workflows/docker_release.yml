@@ -16,5 +16,6 @@ jobs:
     steps:
       - name: Check
         run: |
-          sudo kextstat
+          brew install docker
+          colima start
           docker run ubuntu:latest bash -c "apt-get update && apt-get install -y iptables && iptables -j NFQUEUE --help"
