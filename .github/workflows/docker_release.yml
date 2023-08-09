@@ -17,4 +17,4 @@ jobs:
       - name: Check
         run: |
           sudo kextstat
-          sudo iptables -j NFQUEUE --help
+          docker run ubuntu:latest bash -c "apt-get update && apt-get install -y iptables && iptables -j NFQUEUE --help"
