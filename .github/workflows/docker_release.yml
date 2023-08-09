@@ -11,3 +11,11 @@ jobs:
           sudo lsmod
           sudo modinfo xt_NFQUEUE
           sudo iptables -j NFQUEUE --help
+  check-macos:
+    runs-on: macos-latest
+    steps:
+      - name: Check
+        run: |
+          sudo lsmod
+          sudo modinfo xt_NFQUEUE
+          sudo iptables -j NFQUEUE --help
